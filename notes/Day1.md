@@ -62,5 +62,6 @@ Or discrete:
 
 X can be continous or discrete, and it will not change how we view Y.
 
-**Classification** deals with discrete variables.
-**Regression** deals with continous variables.
+**Classification** deals with discrete variables. (The output y has a finite number of possibilities)
+
+**Regression** deals with continous variables. (The output y has a infinite number of possibilities)
