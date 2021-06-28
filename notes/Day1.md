@@ -34,8 +34,6 @@ Data in video:
 		- Testing Set
 
 
-
-
 ### Supervised Learning
 
 ##### You know exactly what your data is, and you know exactly what your target is.
@@ -48,5 +46,21 @@ Pipeline:
 
 (I): Collect data -> Process Data -> ML -> Backtest
 
-(II): Build the model in a software package, so that when you use your model with new data, the result is still accurate.
-	new data -> your package -> accurate prediction
+(II): Build the model in a software package, so that when you use your model with new data, the result is still accurate. (Software product)
+
+
+new data -> your package -> accurate prediction
+
+In the final project we will finish this pipeline
+
+Y: Response Variable:
+Can be continous:
+- For example a stock price or temperature
+Or discrete:
+- Finite number of possibilities (static)
+- For example cats vs dog, a dice roll
+
+X can be continous or discrete, and it will not change how we view Y.
+
+**Classification** deals with discrete variables.
+**Regression** deals with continous variables.
