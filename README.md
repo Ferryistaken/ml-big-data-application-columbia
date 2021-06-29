@@ -5,3 +5,7 @@
 Notes, contains my daily notes
 
 Code, contains code used by me or required by the course
+
+
+Math test:
+$x = \frac{3}{2}$
