@@ -30,11 +30,11 @@ sd <- 0.05
 mcmc_single = function(time = 100, mean = 0, sd = 0.05) {
     if (is.numeric(time) == TRUE) {
         raw_data = rnorm(time, mean = mean, sd = sd)
-        
+
         # Data manipulation
         data = raw_data + 1
         plot_data = cumprod(data) # cumulative product, it will accumulate the product of all number in the series
-        
+
         # Create 1 line
         plot(1:time, plot_data, type="l", xlab="Number of time units", ylab="Datapoints", main="MCMC Simulation")
     } else {

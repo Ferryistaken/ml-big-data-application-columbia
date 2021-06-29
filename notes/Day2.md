@@ -54,3 +54,18 @@ for (n in c(10, 100, 200, 500, 1000, 10000)) {
     plot(x, y, col = label+1, main = paste0("Est: value of Pi = ", pi_hat))
 }
 ```
+
+### Homework
+
+We introduced a new problem, called the Monte Carlo Simulation / Monte Carlo Markov Chain, to solve this we have to build a script that plots $N$ paths of data that are drawn from normal random values, and plot the $N$ plots in the same graph. This can be used to help us interpret the stock market at a bigger scale.
+
+#### Paragraph on how this might help us in the stock market
+
+I think that it could help us in the stock market in understanding the risk profile of a certain portfolio, and the minimum, maximum, as well as average returns. Since room for error is what guarantees great returns in the long run.
+A great example of this is made in the book: "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness", by Morgan Housel, in which he says:
+
+> I assume the future returns I’ll earn in my lifetime will be ⅓ lower than the historic average. So I save more than I would if I assumed the future will resemble the past. It’s my margin of safety. The future may be worse than ⅓ lower than the past, but no margin of safety offers a 100% guarantee. A one-third buffer is enough to allow me to sleep well at night. And if the future does resemble the past, I’ll be pleasantly surprised.
+
+> In fact, the most important part of every plan is planning on your plan not going according to plan.
+
+This is why most compound interest calculators insert a "Interest rate variance range" section, because even if a stock averaged 8% every year for the last 60 years, you have to face that this return might change, and you have to keep in mind that you will have returns that will be a bit worse, or a bit better. By using the MCMC Simulation, we can simulate the most likely returns of a stock given certain historical data (past deviation), and the worst and best scenarios. This is of course not perfect, but can give useful insight about the safety of a stock, and the worst case and best case scenarios.
