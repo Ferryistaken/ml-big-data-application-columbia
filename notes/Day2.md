@@ -20,3 +20,13 @@ Our "paper" should have this structure:
       - I have a data with a variable $x$, the model $f(\cdot)$ is a function that learns from $x$ and produces an educated guess of $y$. I proposed to use $x^2$, and instead of using the old educated guess of $\hat{y}_1 = f(x)$ we are using $\hat{y}_2 = f(x^2)$. I can show with empirical research that my model is more accurate
   - Hard way:
     - You can design a new model. Originally we have the data $x$ and the model $f(\cdot)$ with the educated guess of $\hat{y}_1 = f(x)$. Now I propose a new model $g(\cdot)$. Then we have a new educated guess $\hat{y}_2 = g(x)$. With empirical evidence I present that $\hat{y}_2$ is more accurate than $\hat{y}_1$.
+
+Ideally we should write our presentation in $\LaTeX$.
+
+## Afternoon
+
+We used R to estimate $\pi$ by using the [Monte Carlo Method](https://academo.org/demos/estimating-pi-monte-carlo/), which can be boiled down to these 2 formulas:
+
+
+
+<div align=center>$\frac{\pi}{4}\approx\frac{N_{\text{inner}}}{N_{\text{total}}}$ and $\pi\approx4\frac{N_{\text{inner}}}{N_{\text{total}}}$.</div>
