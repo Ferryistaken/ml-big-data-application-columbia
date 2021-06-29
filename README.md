@@ -3,4 +3,6 @@
 ## Folder Structure
 
 Notes, contains my daily notes
+
+
 Code, contains code used by me or required by the course
