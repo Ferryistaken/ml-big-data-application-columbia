@@ -1,3 +1,5 @@
+# Alessandro Ferrari <af3218@columbia.edu>
+#
 # Homework
 # Monte Carlo Simulation / Monte Carlo Markov Chain (MCMC)
 # Monte Carlo is the name of the simulation, Markov Chain is the name of the mathematical model
@@ -23,25 +25,41 @@
 # Good visualization: colors, type of plot, labels, titles
 #
 
-time <- 250
-mean <- 0
-sd <- 0.05
+#
+#
+# FOR BONUS PART OF HW SEE: https://github.com/Ferryistaken/ml-big-data-application-columbia/blob/master/notes/Day2.md#how-this-might-help-us-in-the-stock-market
+#
+#
 
-mcmc_single = function(time = 100, mean = 0, sd = 0.05) {
-    if (is.numeric(time) == TRUE) {
-        raw_data = rnorm(time, mean = mean, sd = sd)
+paths <- 20
+time <- 200
+mean <- 0
+sd <- 0.03
+
+# This work best with 0.01 < sd < 0.09, but works best with something like 0.03 or 0.05
+upperGraphLimit <- sd * 150
+
+mcmcSingleData = function(time = 100, mean = 0, sd = 0.05) {
+    if (is.numeric(time) && is.numeric(mean) && is.numeric(sd)) {
+        rawData = rnorm(time, mean = mean, sd = sd)
 
         # Data manipulation
-        data = raw_data + 1
-        plot_data = cumprod(data) # cumulative product, it will accumulate the product of all number in the series
-
-        # Create 1 line
-        plot(1:time, plot_data, type="l", xlab="Number of time units", ylab="Datapoints", main="MCMC Simulation")
+        data = rawData + 1
+        plotData = cumprod(data) # cumulative product, it will accumulate the product of all number in the series
     } else {
-        plot_data = "data not generated"
+        # crash on invalid input
+        stop("Invalid input")
     }
-    return(list(originalData = raw_data,
-                finalData = plot_data))
+    return(list(originalData = rawData,
+                finalData = plotData))
 }
 
-mcmc_single(250, 0, 0.05)
+mcmcPlotLines = function(paths) {
+    # The first one has to be plot() or the graph won't be created, the next ones can be lines()
+    plot(1:time, mcmcSingleData(time, mean, sd)$finalData, type = "l", col = i, xlab = "Number of time units", ylab = "Values of Datapoints", main = "MCMC Simulation", sub = "Alessandro Ferrari", xlim = c(0, (time)), ylim = c(0, upperGraphLimit))
+    for (i in 1:(paths - 1)) {
+        lines(1:time, mcmcSingleData(time, mean, sd)$finalData, type = "l", col = i + 1)
+    }
+} 
+
+mcmcPlotLines(paths)
