@@ -27,6 +27,30 @@ Ideally we should write our presentation in $\LaTeX$.
 
 We used R to estimate $\pi$ by using the [Monte Carlo Method](https://academo.org/demos/estimating-pi-monte-carlo/), which can be boiled down to these 2 formulas:
 
-
-
 <div align=center>$\frac{\pi}{4}\approx\frac{N_{\text{inner}}}{N_{\text{total}}}$ and $\pi\approx4\frac{N_{\text{inner}}}{N_{\text{total}}}$.</div>
+
+We used this code in R:
+
+```R
+# Divide the plot in a 2 by 3 graph
+par(mfrow=c(2, 3))
+
+# Experiment
+for (n in c(10, 100, 200, 500, 1000, 10000)) {
+    # Data:
+    x = runif(n) # draw N samples from uniform random variable / uniform distrubition
+    y = runif(n) # same here
+    d = sqrt(x^2 + y^2) # compute square root of sume of squares of x and y
+
+    # Rejection Region:
+    label = ifelse(d <= 1, 1, 0) # create label for coloring purposes
+
+    # total number of points = r^2, number of red points = (pi x r^2)/4
+    # 
+
+    pi_hat = 4*plyr::count(label)[2,2]/n # recover pi
+
+    # Plot:
+    plot(x, y, col = label+1, main = paste0("Est: value of Pi = ", pi_hat))
+}
+```
