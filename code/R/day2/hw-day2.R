@@ -31,12 +31,17 @@
 #
 #
 
+# this is for ease of use
+rm(list = ls())
+gc()
+
+
 paths <- 20
 time <- 500
 mean <- 0
 sd <- 0.03
 
-# This work best with 0.01 < sd < 0.09, but works best with something like 0.03 or 0.05
+# This works better with 0.01 < sd < 0.09, but works best with something like 0.03 or 0.05
 upperGraphLimit <- sd * 150
 
 mcmcSingleData = function(time = 100, mean = 0, sd = 0.05) {
