@@ -49,6 +49,8 @@ mcmcSingleData = function(time = 100, mean = 0, sd = 0.05) {
         rawData = rnorm(time, mean = mean, sd = sd)
 
         # Data manipulation
+        
+        # Returns + 1, later used for taking the integration
         data = rawData + 1
         plotData = cumprod(data) # cumulative product, it will accumulate the product of all number in the series
     } else {
@@ -81,4 +83,4 @@ mcmcPlotLines = function(paths, time, mean, sd) {
     }
 } 
 
-mcmcPlotLines(paths, time, mean, sd)
+# mcmcPlotLines(paths, time, mean, sd)
