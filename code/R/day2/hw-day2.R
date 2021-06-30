@@ -60,10 +60,24 @@ mcmcSingleData = function(time = 100, mean = 0, sd = 0.05) {
 }
 
 mcmcPlotLines = function(paths, time, mean, sd) {
-    # The first one has to be plot() or the graph won't be created, the next ones can be lines()
-    plot(1:time, mcmcSingleData(time, mean, sd)$finalData, type = "l", col = 1, xlab = "Number of time units", ylab = "Values of Datapoints", main = "MCMC Simulation", sub = "Alessandro Ferrari", xlim = c(0, (time)), ylim = c(0, upperGraphLimit))
+    # The first one has to be plot() or the graph
+    #won't be created, the next ones can be lines()
+    plot(1:time,
+         mcmcSingleData(time, mean, sd)$finalData,
+         type = "l",
+         col = 1,
+         xlab = "Number of time units",
+         ylab = "Values of Datapoints",
+         main = "MCMC Simulation",
+         sub = "Alessandro Ferrari",
+         xlim = c(0, (time)),
+         ylim = c(0, upperGraphLimit))
+    
     for (i in 1:(paths - 1)) {
-        lines(1:time, mcmcSingleData(time, mean, sd)$finalData, type = "l", col = i + 1)
+        lines(1:time,
+              mcmcSingleData(time, mean, sd)$finalData,
+              type = "l",
+              col = i + 1)
     }
 } 
 
