@@ -1,14 +1,9 @@
-# Day 3
+# Day 3 - Visualization tools
 
-## Morning
+rm(list = ls())
+gc()
 
-Trading and stock market introduction, what is a candlestick, bullish and bearish patterns.
 
-The stock market in one phrase: there is no scientific research behind it, people do it because other people are doing it.
-
-We also used simple technical analysis tools like exponential moving averages in R, with the code below:
-
-```R
 # Library quantmod - stock data into R
 library(quantmod)
 
@@ -27,5 +22,3 @@ chartSeries(ARKK[1400:1676, ],
                 addEMA(200, col = 'cyan'),
                 addEMA(12, col = 'yellow')
             ))
-
-```
