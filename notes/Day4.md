@@ -46,28 +46,30 @@ $R$ : `mean(c(1, 0, 1, 0, 0, 0, 1, 1))`
 #### How do you compute mean?
 
 - Empirical Version:
-
+  
   - $(1 + 0 + 1+ 0 + 0 + 0 + 1 + 1)/6$
 
 - Theoretical Version:
-
+  
   - $X ~ Bernulli(P)$
-
+  
   - $P(x = 1) = P$ and $P(x = 0) = 1- P$
-
+  
   - $P(a = b)$  prob of a being b in the sample space
 
 - Ex = $\sum_{x\in R_x} x \cdot P(x)$
-
+  
   - Notation:
-
+    
     - $R_x = \{1, 0\}$
-
+    
     - $x \in R_x$ : $x$ belongs to the set of $R_x$
 
 - Ex = $\sum_{x \in R_X} x \cdot P(x)$
-
+  
   - Compute $x \cdot P(x)$ in $x = 1$ 
+
+[![Bernulli Video](http://img.youtube.com/vi/bT1p5tJwn_0/0.jpg)](http://www.youtube.com/watch?v=bT1p5tJwn_0 "Bernulli Distribution Explained")
 
 ----
 
@@ -75,10 +77,7 @@ $R$: `rnorm(n, mean = ?, sd = ?)`
 
 $x$ ~ $N(\mu, \sigma^2)$, where $x$ is random variable, $\mu$ is average and $\sigma^2$ is standard deviation
 
-
 ![](/home/ferry/.var/app/com.github.marktext.marktext/config/marktext/images/2021-07-01-10-55-55-image.png)
-
-
 
 $f(x) = \frac{1}{\sigma\sqrt{2\pi}}^{-1\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
 
@@ -87,7 +86,5 @@ $f(x) = \frac{1}{\sigma\sqrt{2\pi}}^{-1\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
 Define variance of Bernulli random variable
 
 $\sum_{x\in R_x} x \cdot P(x)$
-
-
 
 $Ex^2$ = $\sum_{x\in R_x} x^2 \cdot P(x)$
