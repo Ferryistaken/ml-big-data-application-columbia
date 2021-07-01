@@ -37,7 +37,7 @@ dygraph(newData) %>% dyCandlestick() %>%
     dyLegend(show = "onmouseover", hideOnMouseOut = TRUE) %>%
     dyRangeSelector()
 
-plot(ARKK$ARKK.Close)
+#plot(ARKK$ARKK.Close)
 
 ARKKReturn = quantmod::dailyReturn(ARKK$ARKK.Close[1000:1676])
 
@@ -48,9 +48,9 @@ sd(ARKKReturn)
 
 #par(mfrow = c(1, 2))
 
-hist(ARKKReturn)
+#hist(ARKKReturn)
 
-hist(rnorm(length(ARKKReturn), mean(ARKKReturn), sd(ARKKReturn)))
+#hist(rnorm(length(ARKKReturn), mean(ARKKReturn), sd(ARKKReturn)))
 
 #source("day2/hw-day2.R")
 
@@ -70,7 +70,7 @@ X = matrix(rnorm(360*100, 0, 0.001) + 1L, nrow = 360, ncol = 100)
 cumX = apply(X, 2, cumprod)
 head(cumX)
 
-matplot(cumX, type = "l")
+#matplot(cumX, type = "l")
 
 head(cumX) # Generated Data
 ARKKReturn # Target Data
@@ -107,9 +107,9 @@ for (N in seq(10, nDays, 10)) {
     #    xlim = c(1, nDays),
     #    ylim = c(min(cumRetPath), max(cumRetPath)))
     
-    for (i in 2:nSim) {
-        lines(x = 1:N, y = cumRetPath[, i], type = "l", col = i)
-    }
+    #for (i in 2:nSim) {
+    #    lines(x = 1:N, y = cumRetPath[, i], type = "l", col = i)
+    #}
 }
 
 
