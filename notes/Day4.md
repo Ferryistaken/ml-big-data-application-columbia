@@ -69,7 +69,7 @@ $R$ : `mean(c(1, 0, 1, 0, 0, 0, 1, 1))`
   
   - Compute $x \cdot P(x)$ in $x = 1$ 
 
-[![Bernulli Video](http://img.youtube.com/vi/bT1p5tJwn_0/0.jpg)](http://www.youtube.com/watch?v=bT1p5tJwn_0 "Bernulli Distribution Explained")
+[![Bernulli Video](https://img.youtube.com/vi/bT1p5tJwn_0/0.jpg)](https://www.youtube.com/watch?v=bT1p5tJwn_0 "Bernulli Distribution Explained")
 
 ----
 
