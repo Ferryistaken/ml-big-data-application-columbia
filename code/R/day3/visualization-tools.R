@@ -98,14 +98,14 @@ for (N in seq(10, nDays, 10)) {
     selectedData = data[1:N, ]
     cumRet = selectedData + 1L # 1L so that it's for each element in the matrix
     cumRetPath = apply(cumRet, 2, cumprod)
-    plot(
-        x = 1:N,
-        y = cumRetPath[,1],
-        main = paste0("Simulated Path for $1 ", "\nMean = ", mu," SD = ", s),
-        type = "l",
-        col = 1,
-        xlim = c(1, nDays),
-        ylim = c(min(cumRetPath), max(cumRetPath)))
+    #plot(
+    #    x = 1:N,
+    #    y = cumRetPath[,1],
+    #    main = paste0("Simulated Path for $1 ", "\nMean = ", mu," SD = ", s),
+    #    type = "l",
+    #    col = 1,
+    #    xlim = c(1, nDays),
+    #    ylim = c(min(cumRetPath), max(cumRetPath)))
     
     for (i in 2:nSim) {
         lines(x = 1:N, y = cumRetPath[, i], type = "l", col = i)
@@ -144,7 +144,7 @@ bestIndex = which(mistakeVectors == leastError)
 paste0("Index: ", bestIndex, ", Error: ", leastError)
 
 
-plot(selectedData[, bestIndex], type = "l")
+#plot(selectedData[, bestIndex], type = "l")
 
 
 

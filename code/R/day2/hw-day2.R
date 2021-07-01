@@ -83,4 +83,4 @@ mcmcPlotLines = function(paths, time, mean, sd) {
     }
 } 
 
-# mcmcPlotLines(paths, time, mean, sd)
+mcmcPlotLines(paths, time, mean, sd)
