@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Day5.md",
+            "file": "notes/Module1.md",
             "mode": "source"
           }
         },
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Day5.md",
+            "file": "notes/Module1.md",
             "mode": "preview"
           }
         },
@@ -65,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 159,
-    "collapsed": true
+    "width": 159
   },
   "right": {
     "id": "b272f21bdc2c55d4",
@@ -82,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Day5.md",
+                "file": "notes/Module1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Day5.md"
+                "file": "notes/Module1.md"
               }
             }
           }
@@ -112,6 +111,7 @@
   },
   "active": "bbb7ffc6f855ffdf",
   "lastOpenFiles": [
+    "notes/Module1.md",
     "notes/Day5.md",
     "notes/Untitled.md",
     "notes/Day4.md",
