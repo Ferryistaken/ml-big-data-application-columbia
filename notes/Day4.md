@@ -1,5 +1,6 @@
 # Day 4
 
+## Morning
 ## Problem: How to code the animations
 
 How would we code this?
@@ -51,7 +52,7 @@ $R$ : `mean(c(1, 0, 1, 0, 0, 0, 1, 1))`
 
 - Theoretical Version:
   
-  - $X ~ Bernulli(P)$
+  - $X ~ Bernoulli(P)$
   
   - $P(x = 1) = P$ and $P(x = 0) = 1- P$
   
@@ -69,7 +70,25 @@ $R$ : `mean(c(1, 0, 1, 0, 0, 0, 1, 1))`
   
   - Compute $x \cdot P(x)$ in $x = 1$ 
 
-[![Bernulli Video](https://img.youtube.com/vi/bT1p5tJwn_0/0.jpg)](https://www.youtube.com/watch?v=bT1p5tJwn_0 "Bernulli Distribution Explained")
+[![Bernoulli Video](https://img.youtube.com/vi/bT1p5tJwn_0/0.jpg)](https://www.youtube.com/watch?v=bT1p5tJwn_0 "Bernoulli Distribution Explained")
+
+Suppose you have:
+- A single trial
+- The trial can result in one of 2 possible outcomes, *success* of *failure*
+- $P(Succes) = p$
+- $P(Failure) = 1 - p$
+
+Let the random variable $X$ equal $1$ if a *success* occurs, and $0$ if a *failure* occurs.
+
+**With these conditions, $X$ has a Bernoulli distribution:**
+
+$P(X = x) = p^{x}(1-p)^{1-x}$
+
+For $x$ = $\{0, 1\}$
+
+$P(X = 1) = p^{1}(1 - p)^{1 - 1} = P$
+
+$P(X = 0) = p^{0}(1 - p)^{1 - 0} = 1 - P$
 
 ----
 
@@ -83,8 +102,37 @@ $f(x) = \frac{1}{\sigma\sqrt{2\pi}}^{-1\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$
 
 -----
 
-Define variance of Bernulli random variable
+Define variance of Bernoulli random variable
 
 $\sum_{x\in R_x} x \cdot P(x)$
 
 $Ex^2$ = $\sum_{x\in R_x} x^2 \cdot P(x)$
+
+
+## Afternoon
+
+### Stock trading strategy
+ In math you can derive models ex: bernoulli, normal distribution
+ from this we can derive expectation, variance, etc.
+
+ Simulation example: Brownian motion
+   1. Randomly generated dots using normal distribution
+   2. Create animation to show how the dots move
+
+ Real World Application:
+   1. Get stock data
+   2. Calculate returns
+   3. Create animation
+
+ Research question: what is the difference between results of (*) and (**)?
+
+ Answer:
+   1. Theoretical answer: you shouldn't be able to tell the difference => random walk (book: Random Walk Down Wall Street)
+   2. Real answer: it depends
+
+ Bonus:
+ Based on your understanding of answer 1, you can start interpreting this trading strategy
+ called the momentum strategy
+
+### Introduced a strategy: Growth Strategy
+This strategy involves analyzing the growth of a certain number of stocks in a certain month, and pick the best stocks to invest in for the next month. This can be observed in [this website](https://y-yin.shinyapps.io/YINS-Q-BRANCH/).
