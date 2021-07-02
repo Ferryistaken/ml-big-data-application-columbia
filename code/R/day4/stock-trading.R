@@ -3,7 +3,7 @@ dev.off()
 gc()
 
 ######### BEGINNING ##########
-
+library(quantmod)
 
 ######### BIG PICTURE ########
 
@@ -29,8 +29,6 @@ gc()
 # Based on your understanding of answer 1, you can start interpreting this trading strategy
 # called the momentum strategy
 
-library(quantmod)
-
 
 getSymbols(c("ARKK", "ARKQ", "RTX", "QCOM"),
            from = paste0("2011-", "01-", "01"))
@@ -38,3 +36,10 @@ getSymbols(c("ARKK", "ARKQ", "RTX", "QCOM"),
 for (i in stocks) {
     head(i, 2)
 }
+
+
+
+####### GROWTH STRATEGY #########
+
+# This strategy consists in picked the best performing stocks in the last month,
+# and buying them, then repeating the next month.
