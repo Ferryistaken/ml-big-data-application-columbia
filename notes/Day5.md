@@ -29,7 +29,12 @@ Note:
 - $\beta_0$: this is the constant term
 
 #### Assumptions
-If these assumptions are broken, the model is useless
+If these assumptions are broken, the model is useless:
 - Linearity: we need to assume that the model is in additive form that consists of the variables $X$'s.
 - Multivariate normality: this assumes that the data $(X)$ is coming from normal distribution, and the same applies if we have more than one variable.
-- No multicollilnearity: 
+- No multicollilnearity: this assumes your variable are **indipendent** from each other.
+- No auto-correlation: this is specific to time-series data sets. i.e: in stock data there is auto-correlation (today's stock price/return is highly correlated with yesterday's)
+- Homoscedasticity: this means that we have constant variance in our model. (referring to the error term $\epsilon$). ex: in the stock market, the volatility (which is computed from the variance) is not constant, in this case, you want to either avoid using the linear regression algorithm or use new sets of variables
+
+
+## Afternoon
