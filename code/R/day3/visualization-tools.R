@@ -146,25 +146,3 @@ paste0("Index: ", bestIndex, ", Error: ", leastError)
 
 #plot(selectedData[, bestIndex], type = "l")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
