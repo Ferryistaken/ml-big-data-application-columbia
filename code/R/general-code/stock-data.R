@@ -38,6 +38,6 @@ volume = stock[, 5]
 #             layout = NULL,
 # )
 
-plot(volume,
-     main = paste0("Daily volume for ", ticker),
-     col = 'orange')
+# plot(volume,
+#      main = paste0("Daily volume for ", ticker),
+#      col = 'orange')
