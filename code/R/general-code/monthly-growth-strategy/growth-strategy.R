@@ -51,5 +51,15 @@ dygraph(applied,
 investment <- data.frame(row.names = rownames(applied))
 
 for (i in 1:nrow(applied)) {
-    
+    if (i %% 20 == 0) {
+        print(index(applied)[i])
+    }
 }
+
+library(keras)
+install_keras(tensorflow = "gpu")
+
+library(tensorflow)
+install_tensorflow()
+
+tf$constant("Hellow Tensorflow")
