@@ -23,6 +23,9 @@ Note:
 The model of linear regression takes the following form:
 $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \epsilon$$
 
+More General Form:
+$$Y = \beta_0 + \sum_{j=1}^p (\beta_j X_j) + \epsilon$$
+
 Note:
 - $\beta$'s are linear coefficients, there are fixed ways of finding them
 - $\epsilon$ is the error term, it's whatever the formula cannot model or learn
@@ -36,13 +39,19 @@ If these assumptions are broken, the model is useless:
 - No auto-correlation: this is specific to time-series data sets. i.e: in stock data there is auto-correlation (today's stock price/return is highly correlated with yesterday's)
 - Homoscedasticity: this means that we have constant variance in our model. (referring to the error term $\epsilon$). ex: in the stock market, the volatility (which is computed from the variance) is not constant, in this case, you want to either avoid using the linear regression algorithm or use new sets of variables
 
+For example, let $X_1$ be number of bedrooms and let $X_2$ be square foot of the real estate. Suppose $Y$ is our target and it is the sale price of this real estate.
+In short this dataframe has 3 columns (sales price, number of bedroom, and square foot). The linear regression model takes the following form:
+$$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \epsilon$$
+Epsilon $(\epsilon)$ is the error, or the noise.
+**Say the model is done, we have $\beta_1 = 3$, this means that $1$ unit of increase in the number of bedroom can increase the sales price by $3$.**
 
 ## Afternoon
 ### Logistic Regression
 
 The logistic regression model assumes that the log-odds of an observation $Y$ can be expressed using linear model. This can be considered as a linear model get tossed inside a link function (a link function is a non-linear function).
 $$\log\bigg(\frac{\mathbb{P}(Y=1|X)}{1 - \mathbb{P}(Y=1|X)}\bigg) = \sum_{j=1}^K \beta_j X_j$$
-and here the log-odds is the ratio of $\mathbb{P}(Y)$ over $1 - \mathbb{P}(Y)$.
+
+<span style="background-color: #b38505">And here the **log-odds is the ratio of $\mathbb{P}(Y)$ over $1 - \mathbb{P}(Y)$.**</span>
 
 Let us derive what $\mathbb{P}(Y)$ is based on the above model.
 
