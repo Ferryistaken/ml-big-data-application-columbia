@@ -51,7 +51,7 @@ Epsilon $(\epsilon)$ is the error, or the noise.
 The logistic regression model assumes that the log-odds of an observation $Y$ can be expressed using linear model. This can be considered as a linear model get tossed inside a link function (a link function is a non-linear function).
 $$\log\bigg(\frac{\mathbb{P}(Y=1|X)}{1 - \mathbb{P}(Y=1|X)}\bigg) = \sum_{j=1}^K \beta_j X_j$$
 
-<span style="background-color: #b38505">And here the **log-odds is the ratio of $\mathbb{P}(Y)$ over $1 - \mathbb{P}(Y)$.**</span>
+==And here the **log-odds is the ratio of $\mathbb{P}(Y)$ over $1 - \mathbb{P}(Y)$.**==
 
 Let us derive what $\mathbb{P}(Y)$ is based on the above model.
 

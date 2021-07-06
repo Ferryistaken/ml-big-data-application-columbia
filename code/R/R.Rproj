@@ -12,6 +12,6 @@ Encoding: UTF-8
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
-PythonType: system
+PythonType: virtualenv
 PythonVersion: 3.8.10
-PythonPath: /usr/bin/python3.8
+PythonPath: ~/Development/virtualenvs/columbia-course/bin/python3
