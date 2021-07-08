@@ -6,10 +6,11 @@
       {
         "id": "bbb7ffc6f855ffdf",
         "type": "leaf",
+        "dimension": 36.25615763546798,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Day6.md",
+            "file": "notes/Day5.md",
             "mode": "source"
           }
         },
@@ -18,10 +19,11 @@
       {
         "id": "72c690efdabce2c0",
         "type": "leaf",
+        "dimension": 63.74384236453202,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/Day6.md",
+            "file": "notes/Day5.md",
             "mode": "preview"
           }
         },
@@ -82,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Day6.md",
+                "file": "notes/Day5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Day6.md"
+                "file": "notes/Day5.md"
               }
             }
           }
@@ -112,8 +114,10 @@
   },
   "active": "bbb7ffc6f855ffdf",
   "lastOpenFiles": [
-    "notes/Day6.md",
     "notes/Day5.md",
+    "notes/Day6.md",
+    "notes/Day8.md",
+    "notes/Day7.md",
     "notes/Untitled.md",
     "notes/Module1.md",
     "notes/Day4.md",
