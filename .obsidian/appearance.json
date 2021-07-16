@@ -1,0 +1,17 @@
+{
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "bullet-point-relationships",
+    "custom-icon-files",
+    "enlarge-image-on-hover",
+    "folding-arrow",
+    "image-card",
+    "infinite-scroll",
+    "matuschaks-mode",
+    "riboons",
+    "nicer-check-boxes",
+    "tag-pills"
+  ],
+  "obsidianCss": true,
+  "cssTheme": "Big Sur Aesthetic"
+}
